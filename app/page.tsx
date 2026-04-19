@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-const GITHUB = "https://github.com/pierresavary562935/vigilant";
 const GUMROAD = "https://savarypierre.gumroad.com/l/vigilant";
 
 const features = [
@@ -60,12 +59,13 @@ export default function Home() {
             How it works
           </a>
           <a
-            href={GITHUB}
+            href={GUMROAD}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
+            className="hover:text-white transition-colors font-semibold"
+            style={{ color: "var(--red)" }}
           >
-            GitHub
+            Buy — $4.99
           </a>
         </div>
       </nav>
@@ -114,18 +114,6 @@ export default function Home() {
             style={{ background: "var(--red)" }}
           >
             Buy — $4.99
-          </a>
-          <a
-            href={GITHUB}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 rounded-full font-semibold transition-colors hover:text-white"
-            style={{
-              border: "1px solid var(--border)",
-              color: "var(--muted)",
-            }}
-          >
-            View source
           </a>
         </div>
 
@@ -232,7 +220,6 @@ export default function Home() {
             <ul className="space-y-1">
               <li>macOS 13.0+ (Apple Silicon)</li>
               <li>Camera permission on first launch</li>
-              <li>Xcode Command Line Tools (to build from source)</li>
             </ul>
           </div>
           <div>
@@ -267,7 +254,7 @@ export default function Home() {
             Buy Vigilant — $4.99
           </a>
           <p className="text-xs" style={{ color: "var(--muted)" }}>
-            macOS 13+ · Apple Silicon · MIT open source
+            macOS 13+ · Apple Silicon · Use responsibly.
           </p>
         </div>
       </section>
@@ -281,16 +268,7 @@ export default function Home() {
         }}
       >
         <p>
-          Built by{" "}
-          <a
-            href={GITHUB}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-white transition-colors"
-          >
-            Pierre S.
-          </a>{" "}
-          · MIT License · Use responsibly and in accordance with local laws.
+          Built by Pierre S. · Use responsibly and in accordance with local laws.
         </p>
       </footer>
     </main>
