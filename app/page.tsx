@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const GITHUB = "https://github.com/pierresavary562935/vigilant";
-const GUMROAD = "https://pierresavary.gumroad.com/l/vigilant"; // update with real link
+const GUMROAD = "https://savarypierre.gumroad.com/l/vigilant";
 
 const features = [
   {
